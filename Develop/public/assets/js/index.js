@@ -49,7 +49,7 @@ const deleteNote = (id) =>
       'Content-Type': 'application/json',
     },
   });
-
+//Maybe add a function here for editing a note?
 const renderActiveNote = () => {
   hide(saveNoteBtn);
 
