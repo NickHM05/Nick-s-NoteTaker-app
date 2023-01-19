@@ -64,19 +64,20 @@ router.delete('/notes/:id', (req, res) => {
 
         //Get the data we had before. 
         let httpNote = JSON.parse(data);
-        let deleteIndex = httpNote.indexNumber(p => p.id === req.params.id);
-        if (deleteIndex === -1) {
+        // gonna have this delete the index when not needed on deletion.
+        let indeci = httpNote.indexNumber(p => p.id === req.params.id);
+        if (indeci === -1) {
             const response = {
                 status: `The id cannot be found.`,
             };
             res.status(404).json(response);
-            console.log('The delete request was recieved for an id that was not found.')
+            console.log('The delete request was recieved for an id that was no longer found.')
             //the page needs to be returned to after. 
             return;
         }
 
         //The id from the array needs to go away here. 
-        httpNote.splice(deleteIndex, 1);
+        httpNote.splice(indeci, 1);
 
         //Update the note after the post was made here. 
         note = httpNote;
