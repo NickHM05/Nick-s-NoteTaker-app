@@ -1,4 +1,3 @@
-
 const path = require("path");
 const router = require("express").Router();
 
@@ -10,9 +9,4 @@ router.get("*", (req, res) => {
 });
 
 //http:localhost3001/notes
-
-
-
-
-
 module.exports = router
