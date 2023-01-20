@@ -33,5 +33,10 @@
   "title": "Maybe this is the final test",
   "text": "Note of the day",
   "id": "62ac4d00-9853-11ed-96e4-05fea1e82f6e"
+ },
+ {
+  "title": "testing my note after npm",
+  "text": "npm was reinstalled.\n",
+  "id": "4bf85e70-9874-11ed-bc62-f71b492a5640"
  }
 ]
