@@ -1,7 +1,7 @@
 # Nick's Note Taker App
 
 ## Description
-This note taker application was made to provide experience in using and creating routes that we learned as we were given starter code to help. The user can use this application as a good note taker app  via their local host site running the code or through heroku while the server is running. I learned how to use the get and post methods we learned in express as well as using the express server system. 
+This note taker application was made to provide experience in using and creating routes that we learned as we were given starter code to help. The user can use this application as a good note taker app via their local host site running the code or through heroku while the server is running. I learned how to use the get and post methods we learned in express as well as using the express server system. 
 ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)

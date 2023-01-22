@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const store = require("../db/store");
-//const db = require("../db/db.json");
-//const path = require("path");
+const db = require("../db/db.json");
+const path = require("path");
 const fs = require("fs");
 //this uuid being called is questionable. I dont know why it comes from my typescript/4.9/node_modules/@types/uuid/index when i thought it was supposed to come through just the json but package. 
 
@@ -65,7 +65,7 @@ router.delete('/notes/:id', (req, res) => {
         //Get the data we had before. 
         let httpNote = JSON.parse(data);
         // gonna have this delete the index when not needed on deletion.
-        let indeci = httpNote.indexNumber(p => p.id === req.params.id);
+        let indeci = httpNote.findIndex(p => p.id === req.params.id);
         if (indeci === -1) {
             const response = {
                 status: `The id cannot be found.`,
